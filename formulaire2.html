@@ -1,48 +1,36 @@
-
-﻿<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresseur de Pokémon</title>
 </head>
 <body>
-	<h1>dresseur de pokemon</h1>
-	<p>
-		les champs marqué d'une * sont obligatoires 
-	</p>
+    <h1>Dresseur de pokémon</h1>
+    <form action="#" method="post">
+        <!-- Nom du dresseur -->
+        <label for="name">Nouveau dresseur</label><br>
+        <input type="text" id="name" name="name" placeholder="Nom" required><br><br>
 
-<form action="#">
-<fieldset>
-<legend>Nouveau dresseur</legend>
-<p>Nom : <input name="A" type="Text" value="Nom ?"/></p>
-<p>Prénom : <input name="B" type="Text" value="Prénom ?"/></p>
-</fieldset>
-<p>Mr <input name="C" type="radio" value="Mr"/> 
-Mme<input name="C" type="radio" value="Mme"/></p>
-<p>
-Chien <input name="D" type="checkbox" value="Chien"/>
-Chat <input name="E" type="checkbox" value="Chat"/>
-Poisson <input name="F" type="checkbox" value="Poisson"/>
-</p>
-<p>
-<select name="G" multiple>
-	<option>Pain</option>
-	<option>Citron</option>
-	<option>Orange</option>
-</select>
-</p>
-<p>
-<textarea rows="3" cols="30	" name="H">
-Laisez nous un commentaire
-</textarea>
+        <!-- Description -->
+        <label for="description">Description</label><br>
+        <textarea id="description" name="description" rows="5" cols="40"></textarea><br><br>
 
-</p>
-<p><input type="submit" value="Envoyer" />
-<input type="reset"/>
-</p>
+        <!-- Choix de l'équipe -->
+        <label>Équipe</label><br>
+        <input type="radio" id="rouge" name="team" value="Rouge" required>
+        <label for="rouge">Rouge</label><br>
+        <input type="radio" id="jaune" name="team" value="Jaune">
+        <label for="jaune">Jaune</label><br>
+        <input type="radio" id="bleu" name="team" value="Bleu">
+        <label for="bleu">Bleu</label><br><br>
 
+        <!-- Anniversaire -->
+        <label for="birthday">Anniversaire</label><br>
+        <input type="date" id="birthday" name="birthday" required><br><br>
 
-</form>
-
+        <!-- Bouton Envoyer -->
+        <button type="submit">Envoyer</button>
+    </form>
 </body>
 </html>
-
